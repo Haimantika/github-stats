@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('loadStars').addEventListener('click', function() {
     fetchData('https://api.opensauced.pizza/v2/histogram/top/stars', 'starRows');
 });
