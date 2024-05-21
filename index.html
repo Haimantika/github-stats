@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Starred Open Source Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+<h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white title-spacing">Top <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">starred & forked</mark> projects</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-l dark:text-gray-400">Get to know what is going on in the open-source world. Which projects are getting the most number of stars and forks.</p>
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+<p class="tracking-tighter text-gray-500 md:text-lg dark:text-gray-400">Top 10 starred projects are:</p>
+<button type="button" id="loadStars" class="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 button-spacing">Show stars</button>
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">Repository</th>
+                <th scope="col" class="px-6 py-3">Stars</th>
+            </tr>
+        </thead>
+        <tbody id="starRows">
+        </tbody>
+    </table>
+</div>
+<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
+<p class="tracking-tighter text-gray-500 md:text-lg dark:text-gray-400">Top 10 forked projects are:</p>
+
+<button type="button" id="loadForks" class="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 button-spacing">Show forks</button>
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">Repository</th>
+                <th scope="col" class="px-6 py-3">Forks</th>
+            </tr>
+        </thead>
+        <tbody id="forkRows">
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
